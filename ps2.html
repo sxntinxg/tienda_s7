@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PS2 Underground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      padding: 40px;
+    }
+    .cuadro {
+      background: #111;
+      border: 3px solid #00ffcc;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px #00ffcc88;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔍 Buscador brutalista -->
+<input type="text" id="buscadorPS2" placeholder="Buscar juego PS2..." style="padding:10px; font-size:16px; width:100%; max-width:400px; margin-bottom:20px;">
+
+<div class="cuadro">
+    <h1>🎮 Catálogo PS2</h1>
+    <p>Bienvenido a este apartado JUEGOS PS2. Si desee subir un archivo que no está en la tienda háganoslo saber.</p>
+    <p>Modularidad activada. Estilo S7™ en progreso.</p>
+    <p>Créditos: GAMESGX. Todos los juegos tendran esta contraseña: gamesgx.net
+</div>
+  
+<!-- 🧠 Script de filtrado -->
+<script>
+document.getElementById("buscadorPS2").addEventListener("input", function() {
+  const filtro = this.value.toLowerCase();
+  const fichas = document.querySelectorAll("#fichasPS2 .ficha");
+
+  fichas.forEach(ficha => {
+    const texto = ficha.textContent.toLowerCase();
+    ficha.style.display = texto.includes(filtro) ? "block" : "none";
+  });
+});
+</script>
+
+<!-- 🎨 Estilo visual -->
+<style>
+.ficha {
+  background: #111;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px #00ffcc88;
+  color: #fff;
+}
+</style>
+  
+<!-- 🎮 Fichas PS2 -->
+<div id="fichasPS2">
+
+  <div class="ficha">
+    <h3>God of War II</h3>
+    <p>⚔️ Acción épica</p>
+    <p>📥 <a href="https://www.mediafire.com/file/rvrraz67rj7tall?dkey=tjxmtlke75h&r=297" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+  <div class="ficha">
+    <h3>Resident Evil 4</h3>
+    <p>💀 Terror táctico</p>
+    <p>📥 <a href="https://www.mediafire.com/file/new5vxunz0a22re?dkey=plfxa5v4kpv&r=1551" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+  <div class="ficha">
+    <h3>Dragón ball z: budokai Tenkaichi 3</h3>
+    <p>👊🏽 Pelea legendaria</p>
+    <p>📥 <a href="https://www.mediafire.com/file/2v2daxmmm3wk7c8?dkey=rnjtce30ygw&r=905" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+ <div class="ficha">
+    <h3>Grand the auto: San andreas ZOMBIES</h3>
+    <p>🔥 Acción pura</p>
+    <p>📥 <a href="https://www.mediafire.com/file/kt40e6037lksyyc?dkey=5t2c8qoulk9&r=222" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+ <div class="ficha">
+    <h3>Shadow of the colossus</h3>
+    <p>✨ The best</p>
+    <p>📥 <a href="https://www.mediafire.com/file/ra9wu29eef0992r?dkey=yzu1gida8nt&r=234" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+ <div class="ficha">
+    <h3>Metal gear solid 3 SNAKE EATER</h3>
+    <p>🕹️ Acción atrapante</p>
+    <p>📥 <a href="https://www.mediafire.com/file/50gkjgadx3d3d5w?dkey=qwd0fx79nwj&r=1166" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Final Fantasy XII</h3>
+    <p>☠️ Buen Final Fantasy</p>
+    <p>📥 <a href="https://www.mediafire.com/file/op8k9nel2v6y0kf?dkey=pj7upr5wcvg&r=148" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Devil May Cry 3</h3>
+    <p>👹 Demonio andante</p>
+    <p>📥 <a href="https://www.mediafire.com/file/m45af3q04lxpskd?dkey=3fojdn6xtqh&r=1972" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Tekken 5</h3>
+    <p>🫴🏽 Peleas sin fin</p>
+    <p>📥 <a href="https://www.mediafire.com/file/tnqaxoopwt0ijl0?dkey=0jxsr6ufrle&r=803" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Kingdom hearts ll</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/h7vl542dj0oqvim?dkey=uex5dxgm5in&r=1205" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Silent hill 2</h3>
+    <p>😶 Terror analógico</p>
+    <p>📥 <a href="https://www.mediafire.com/file/183epn5n03806bi?dkey=yprdidhyfkp&r=1480" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Burnout 3:Takedown</h3>
+    <p>🚗 Carreras</p>
+    <p>📥 <a href="https://www.mediafire.com/file/n40rxwduko5q1uh?dkey=lt4yw4wnk0u&r=1054" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Prince Of Persia:Warrior Whitin</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/zke78u9scnhwvsa?dkey=4k4cxuc377u&r=100" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Ratchet y clank 2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/zqf0o33o2opukys?dkey=w0968iroubm&r=445" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Jak and Daxter</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/al9z9y7fo3zerjk?dkey=znrb388xn2l&r=1738" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>WWE 2K24</h3>
+    <p>🎮 Luchas brutales</p>
+    <p>📥 <a href="https://www.mediafire.com/file/sitqlgk4bjny0qp?dkey=sy52ac04a9d&r=1174" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Dragón ball Z:Budokai Tenkaichi 4</h3>
+    <p>Luchas</p>
+    <p>📥 <a href="https://www.mediafire.com/file/h5e47sc5ncck820?dkey=ncwaucjtryh&r=1356" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Gladiator road to freedom</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/fk911r2iodyjzlv?dkey=z5h108iewca&r=1920" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Trivial pursuit</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/9qy2mausg8yj9wl?dkey=zg0dptg7qh0&r=951" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Guitar Hero Gothic metal</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/68iol81gtqig402?dkey=pdtwi9yzywr&r=1731" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Guitar hero III</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/et5e7jxxvzxljwk?dkey=8407fair1yq&r=101" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Gran Turismo 4</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/xaz1p3nmoyzb8s8?dkey=jsxdh3djaiq&r=639" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>GTA Vice city (prototype)</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/ogy2bs8e5ujdxjm?dkey=jhyci4lq16e&r=46" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Rock Band 2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/0hgidlmhkldozbp?dkey=4y2htq5awjc&r=1782" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Dragón ball z vs Saint seiya</h3>
+    <p>Peleas épicas</p>
+    <p>📥 <a href="https://www.mediafire.com/file/xchdv7043yvya1v?dkey=r9tn902lbby&r=1886" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Naruto Shippuden Tenkaichi ninja 3</h3>
+    <p>pelea y historia épica</p>
+    <p>📥 <a href="https://www.mediafire.com/file/x76wlo643p4jtpp?dkey=5pfnq7umdok&r=1458" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Half-Life uplink</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/sfxqj6n3xfensmr?dkey=hq3wmozv2rm&r=974" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Grand thef auto NO WAY HOME (spiderman)</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/z3g0qd7po0j1e5d?dkey=4qgjpb1dm4w&r=796" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Shaun white Snowboarding</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/owyg2vh2y19wu4k?dkey=yxt47rklpzl&r=1923" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Winning Eleven</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/xer7lcc1b04i6jc?dkey=5qyowp1xiup&r=91" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Persona 4</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/8t2knefh3yp6y9b?dkey=lshy5t5cufn&r=1968" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>SSX 3</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/2x6cvgwd02mx5bq?dkey=pl57srrsm9x&r=1434" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>BLACK</h3>
+    <p>Shooter mágico</p>
+    <p>📥 <a href="https://www.mediafire.com/file/dje6airmc1w8ouj?dkey=erupbufzahs&r=1220" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Twisted metal black</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/5trulz3k1ye01zl?dkey=nttgtc1saxf&r=1048" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>NBA STREET VOL.2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/ld5gv36kxdzpac5?dkey=ylgpw9u2hvc&r=1775" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Bully</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/mfqbrgozj2s4hdj?dkey=byooszkdyei&r=1829" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Onimusha 3: demon siege</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/308ybz6m9jrn914?dkey=2mjw2x6b4zr&r=1235" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Max payne</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/03y3b1046k005q9?dkey=2ydr8erqayr&r=1677" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Max payne 2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/q5hk6ljznqer2d2?dkey=tct6ljwazt6&r=239" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>The simpsons: Skateboarding</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/xwf3b259uw1d1aw?dkey=t0r9vjozo8k&r=994" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Need for speed: Underground 2 Sha_Do</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/sfo8bkfyvf08b3f?dkey=8v5cfv6hdw1&r=233" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Need for speed: ProStreet</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/nb8gxibgp53902l?dkey=7avo9z2rxhz&r=433" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Need for speed: Most Wanted</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/nak3spnh0mwn077?dkey=wn2c11t031j&r=789" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Need for speed: Carbon </h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/0athisp4iz482t3?dkey=6lursi0w2ia&r=113" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Castlevania: lament of innocence</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/lw0562y4ys57s2y?dkey=beyhh6nl3n9&r=841" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Rogue galaxy</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/rxltwb0y9ijjthg?dkey=miw8z1azttg&r=1442" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Manhunt</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/pin739zcw9lkjp2?dkey=cuzth38imzi&r=1927" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Manhunt 2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/sq7bqwts081gjqk?dkey=nbd2r5i4q9m&r=146" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>God Hand</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/r50ucw20u3bblxc?dkey=v2lh40nqy2y&r=546" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Dark Cloud 2</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/o2gsmqpaq3sgrsw?dkey=5c2ixl51l9j&r=940" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+<div class="ficha">
+    <h3>Medal of honor: VANGUARD</h3>
+    <p></p>
+    <p>📥 <a href="https://www.mediafire.com/file/eb6r122f9vxffvd?dkey=gv64kydxttv&r=1086" target="_blank" style="color:#4fc3f7;">Acceso externo compartido por GAMES GX.Enlace público, no alojado por esta tienda </a></p>
+</div>
+
+  <!-- 🔁 Más fichas acá -->
+</div>
+
+
+</body>
+</html>

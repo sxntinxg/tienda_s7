@@ -1,0 +1,84 @@
+/* 🔥 FONDO BRUTALISTA */
+body {
+  background-color: #900; /* Rojo oscuro */
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* 💀 TÍTULO GLITCHEADO */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 0 0 10px #f00, 0 0 20px #fff;
+  animation: glitch 1s infinite;
+}
+
+/* 👾 BLOQUES DE MODS */
+.mod {
+  border: 2px dashed #fff;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #111;
+  border-radius: 5px;
+}
+
+/* 🎮 BOTONES DE DESCARGA */
+.mod a {
+  display: inline-block;
+  background-color: #f00;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #f00;
+  transition: transform 0.2s ease;
+}
+
+.mod a:hover {
+  transform: scale(1.1);
+  background-color: #ff3333;
+}
+
+/* 💫 EMOJIS FLOTANTES */
+body::before {
+  content: "🔥👾💀🎮";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.1;
+  animation: flotar 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+
+/* ⚡ ANIMACIÓN GLITCH */
+@keyframes glitch {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(-2deg); }
+  40% { transform: skew(2deg); }
+  60% { transform: skew(-1deg); }
+  80% { transform: skew(1deg); }
+  100% { transform: skew(0deg); }
+}
+
+.mensaje-s7 {
+  margin: 20px;
+  padding: 15px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #ff0040;
+  border-radius: 8px;
+}
+

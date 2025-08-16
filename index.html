@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tienda_s7</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background:#000; color:#fff; font-family:'Segoe UI', sans-serif; padding:20px;">
+
+  <!-- 🔐 Campo para ingresar la clave -->
+  <input type="password" id="clavePSP" placeholder="Ingrese su contraseña 🔒" style="padding:8px; font-size:16px; margin-bottom:10px;">
+  <button onclick="accesoPSP()" style="padding:8px 12px; font-size:16px;">Acceder 🚀</button>
+
+  <!-- 🧩 Apartado PSP oculto -->
+  <div id="bloquePSP" style="display:none; margin-top:20px;">
+
+    <h1 style="font-size:32px; color:#4fc3f7;">🔥 S7 STORE ™NxG 🔥</h1>
+    <p class="texto">Tienda exclusivamente para miembros del clan NxG.</p>
+    <p>Este espacio está en desarrollo. Se pide comprensión.</p>
+
+    <!-- 🎮 Sección PPSSPP -->
+    <section class="seccion-juegos" style="margin-top:20px;">
+      <h3 style="color:#4fc3f7;">🎮 Lista de Juegos PPSSPP</h3>
+      <a href="juegos_ppsspp.html" class="btn-pulso" target="_blank" style="display:inline-block; padding:10px 16px; background:#4fc3f7; color:#000; text-decoration:none; border-radius:6px;">🕹️ Ver Juegos PPSSPP</a>
+    </section>
+
+    <!-- 🎮 Cuadro brutalista PS2 -->
+    <div style="margin:30px auto; max-width:600px; padding:20px; background:linear-gradient(145deg, #0a2a5f, #1c3f7a); border:5px solid #000; border-radius:20px; box-shadow:0 0 25px #000; text-align:center;">
+      <h2 style="font-size:28px; margin-bottom:15px;">🎮 Juegos PS2</h2>
+      <p style="font-size:16px; margin-bottom:20px;">🟥🟩🟨🔵 Mods, clásicos y combos legendarios con estilo S7™.</p>
+      <a href="ps2.html" style="display:inline-block; padding:12px 20px; font-size:18px; background:#000; color:#4fc3f7; border-radius:10px; text-decoration:none; box-shadow:0 0 10px #000;">🔘 Ver juegos PS2</a>
+      <p style="margin-top:30px; font-size:12px; color:#888;">⚠️ Esta tienda no aloja archivos. Los enlaces son públicos y pertenecen a sus autores. Si eres el creador y deseas que se retire un link, contáctanos.</p>
+    </div>
+
+    <!-- 📱 Zona APK -->
+    <section id="apk-zone" style="background:#0f0f0f; padding:40px; border-top:4px solid #4fc3f7;">
+      <div style="text-align:center;">
+        <h2 style="color:#4fc3f7; font-size:28px;">Zona de Juegos APK</h2>
+        <p style="color:#ccc; font-size:16px;">Acceso externo a títulos Android modificados, ports y clásicos. Curaduría visual, sin alojar contenido.</p>
+        <a href="apk.html" class="btn-apk" style="display:inline-block; padding:12px 20px; background:#4fc3f7; color:#000; text-decoration:none; font-weight:bold; border:2px solid #fff; border-radius:6px;">🚀 Ir a juegos APK</a>
+        <p style="margin-top:30px; font-size:12px; color:#888;">⚠️ Esta tienda no aloja archivos. Los enlaces son públicos y pertenecen a sus autores. Si eres el creador y deseas que se retire un link, contáctanos.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 🧠 Script para validar la clave -->
+  <script>
+    function accesoPSP() {
+      const clave = document.getElementById("clavePSP").value;
+      if (clave === "1") {
+        document.getElementById("bloquePSP").style.display = "block";
+      } else {
+        alert("❌ Clave incorrecta. No tenés el nivel.");
+      }
+    }
+  </script>
+
+</body>
+</html>
