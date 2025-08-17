@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S7 STORE™ — Emuladores</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(rgba(10,10,10,0.95), rgba(30,0,40,0.95)), url('https://i.imgur.com/your-dark-fantasy-bg.jpg') center/cover no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ccc;
+    }
+    h2 {
+      color: #e0b0ff;
+      text-align: center;
+      margin-top: 40px;
+      text-shadow: 0 0 10px #6a0dad;
+    }
+    .fichas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+    .ficha {
+      width: 200px;
+      background-color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #6a0dad;
+      transition: transform 0.3s ease;
+    }
+    .ficha:hover {
+      transform: scale(1.05);
+    }
+    .ficha img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .ficha div {
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+    .disclaimer {
+      margin: 40px;
+      font-size: 0.9em;
+      color: #999;
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🧩 Emuladores disponibles</h2>
+
+  <div class="fichas">
+    <!-- Ficha 1 -->
+    <a href="https://retroarch.com" target="_blank" class="ficha">
+      <img src="img/retroarch.png" alt="RetroArch">
+      <div>RetroArch</div>
+    </a>
+
+    <!-- Ficha 2 -->
+    <a href="https://www.ppsspp.org" target="_blank" class="ficha">
+      <img src="img/ppsspp.png" alt="PPSSPP">
+      <div>PPSSPP</div>
+    </a>
+
+    <!-- Ficha 3 -->
+    <a href="https://damonps2.com" target="_blank" class="ficha">
+      <img src="img/damonps2.png" alt="DamonPS2">
+      <div>DamonPS2</div>
+    </a>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> Este apartado contiene enlaces externos a herramientas de emulación. No se alojan archivos protegidos. El uso es responsabilidad del usuario.
+  </div>
+
+</body>
+</html>
